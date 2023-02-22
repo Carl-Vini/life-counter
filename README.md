@@ -1,2 +1,3 @@
 # life-counter
 A life counter for magic the gathering
+Work in progress ...
