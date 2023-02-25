@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+} 
+
+body {
+    height: 100vh;
+    background-image: url(img/magic-backgroung-desktop.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+    
+} 
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    
+    gap: 6vw; 
+}
+
+
+
+.container-players {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    padding-top: 10%;
+}
+
+.container-player {
+    box-sizing: border-box;
+    border-radius: 15px;
+    text-align: center;
+    padding: 6vw 3vw;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+h1 {
+    font-family: 'MedievalSharp', cursive;
+    text-align: center;
+    font-size: 60px;
+}
+
+.container-player1 {
+    background-color: #10A19D;    
+    
+}
+
+.container-player2 {
+    background-color: #FF7000;
+}
+
+.container-player-increment {
+    font-size: 60px;
+    border-radius: 10%;
+    
+}
+
+.container-player-increment:hover {
+    font-size: 80px;
+    cursor: pointer;
+    transition: 0.8s;
+    
+}
+
+.number {
+    font-size: 80px;
+    font-family: 'MedievalSharp', cursive;
+    color: black
+}
+
+
+@media (max-width: 640px ) {
+    body {
+        background-image: url(img/background-magic-mobile-2.png);
+        
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 150px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .container-players {
+        padding: 1%;
+        position: relative;
+       
+    }
+
+    .container-player {
+        padding: 6vh;
+    
+    }
+
+    /* fazendo o jogador 1 ficar de cabeça para baixo, sem que fique espelhado */
+    .upside-down {
+        transform: rotate(180deg);
+    }
+
+
+}
