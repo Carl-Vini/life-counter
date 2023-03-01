@@ -132,6 +132,7 @@ h1 {
         font-size: 70px;
         cursor: pointer;
         transition: 0.9s;
+        color: gray;
         
     }
 
