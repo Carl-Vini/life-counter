@@ -135,6 +135,7 @@ h1 {
     
     .container-player2 {
         background-color: #FF7000;
+        margin-bottom: 20px;
        
     }
     
@@ -151,7 +152,7 @@ h1 {
     .upside-down {
         transform: rotate(180deg);
         position: relative;
-        bottom: 350px;
+        bottom: 34.5vh;
     }
 
 
