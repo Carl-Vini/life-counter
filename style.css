@@ -8,7 +8,7 @@
 
 body {
     height: 100vh;
-    background-image: url(img/magic-backgroung-desktop.jpg);
+    background-image: url(img/background-magic.jpg);
     background-attachment: fixed;
     background-size: cover;
     box-sizing: border-box;
@@ -17,10 +17,10 @@ body {
 
 
 .container {
-    display: flex;
+    display: grid;
     justify-content: center;
+    grid-template-columns: auto auto;
     
-    gap: 6vw; 
 }
 
 
@@ -28,9 +28,9 @@ body {
 .container-players {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     box-sizing: border-box;
-    padding-top: 10%;
+    padding-top: 5%;
+    padding-right: 40px;
 }
 
 .container-player {
@@ -47,7 +47,7 @@ body {
 h1 {
     font-family: 'MedievalSharp', cursive;
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .container-player1 {
@@ -57,6 +57,14 @@ h1 {
 
 .container-player2 {
     background-color: #FF7000;
+}
+
+.container-player3 {
+    background-color: #EA047E;
+}
+
+.container-player4 {
+    background-color: #38E54D;
 }
 
 .container-player-increment {
@@ -86,9 +94,16 @@ h1 {
     }
 
     .container {
+        display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        gap: 115px;
+        align-items: center;
+        height: 100vh;
+        
+        
+        
+        
+        
     }
 
     .title {
@@ -96,19 +111,47 @@ h1 {
     }
 
     .container-players {
-        padding: 1%;
-        position: relative;
+        padding: 0.5%;
+        
+        gap: 20px;
        
     }
 
     .container-player {
         padding: 6vh;
-    
+        
     }
+
+
+    .container-name {
+        display: none;
+    }
+
+    .container-player1 {
+        background-color: #10A19D; 
+       
+             
+    }
+    
+    .container-player2 {
+        background-color: #FF7000;
+       
+    }
+    
+    .container-player3 {
+        display: none;
+    }
+    
+    .container-player4 {
+        display: none;
+    }
+    
 
     /* fazendo o jogador 1 ficar de cabeça para baixo, sem que fique espelhado */
     .upside-down {
         transform: rotate(180deg);
+        position: relative;
+        bottom: 350px;
     }
 
 
