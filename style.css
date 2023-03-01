@@ -129,7 +129,7 @@ h1 {
     }
 
     .container-player-increment:active {
-        font-size: 65px;
+        font-size: 70px;
         cursor: pointer;
         transition: 0.9s;
         
